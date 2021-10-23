@@ -5,7 +5,8 @@
   --red: #d94848;
   --green: #5cb567;
   --white: #fcfcfc;
-  --lg-text: 22px;
+  --lg-text: 30px;
+  --md-text: 25px;
 }
 
 body {
@@ -27,3 +28,19 @@ header {
 }
 
 /* scanner */
+
+
+/* list */
+
+.list-container {
+  margin: 5rem 10rem;
+}
+
+.banned-ingredient {
+  color: var(--red);
+}
+
+.ingredient {
+  margin-right: 1rem;
+  font-size: var(--md-text);
+}

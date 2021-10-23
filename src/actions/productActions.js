@@ -27,7 +27,7 @@ export const getProduct = (code, { setShowList }) => async (dispatch, getState) 
                 type: PRODUCT_SUCCESS,
                 payload: response.data
             })
-            console.log(response.data);
+            setShowList(true);
         }).catch(function (error) {
             dispatch({
                 type: PRODUCT_FAIL,
@@ -46,5 +46,4 @@ export const getProduct = (code, { setShowList }) => async (dispatch, getState) 
         })
     }
 
-    setShowList(true);
 };
