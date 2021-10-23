@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Header />
       { showScanner && <Scanner showScanner={ showScanner } setShowScanner={ setShowScanner } setShowList={ setShowList } /> }
-      { showList && <List /> }
+      { showList && <List setShowScanner={ setShowScanner } setShowList={ setShowList } /> }
     </div>
   );
 }

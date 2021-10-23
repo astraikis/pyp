@@ -4,8 +4,10 @@ function Header() {
     return (
         <header>
             <div>
-                <i className="fal fa-barcode-read header-icon"></i>
-                <span>pyp</span>
+                <a href='/' className='header-link'>
+                    <i className="fal fa-barcode-read header-icon"></i>
+                    <span>pyp</span>
+                </a>
             </div>
         </header>
     )

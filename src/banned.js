@@ -80,7 +80,7 @@ export const banned = {
 
     'fd&c yellow no. 6': 'https://cspinet.org/new/201006291.html#:~:text=Blue%201%2C%20Red%2040%2C%20Yellow,dyes%20cause%20hyperactivity%20in%20children.',
     'foie gras': 'https://www.medicaldaily.com/foie-gras-low-carb-fatty-liver-poses-deadly-health-risks-duck-dish-banned-parts-us-247047#:~:text=%E2%80%BA%20Consumer%20News-,Foie%20Gras%3A%20Low%2DCarb%20Fatty%20Liver%20Poses%20Deadly%20Health%20Risks,In%20Parts%20Of%20The%20US&text=Consumption%20of%20the%20once%2Ddubbed,proteins%20in%20tissues%20and%20organs.',
-
+    
     'garcinia cambogia': 'https://www.webmd.com/vitamins-and-supplements/garcinia-cambogia-weight-loss#091e9c5e80f72805-1-4',
     'ginkgo biloba': 'https://www.webmd.com/vitamins/ai/ingredientmono-333/ginkgo',
     'gmp': 'https://www.biopharminternational.com/view/assessing-and-managing-risks-gmp-environment',
@@ -91,6 +91,7 @@ export const banned = {
     'heptylparaben': 'https://www.safecosmetics.org/get-the-facts/chemicals-of-concern/parabens/',
     
     'high-fructose corn syrup': 'https://www.healthline.com/nutrition/why-high-fructose-corn-syrup-is-bad#:~:text=HFCS%20and%20sugar%20have%20been,21%20%2C%2022%20%2C%2023%20).',
+    'corn syrup': 'https://www.colechiropracticclinic.com/corn-syrup-vs-high-fructose-corn-syrup/',
     'hjijiki': 'https://inspection.canada.ca/food-safety-for-consumers/fact-sheets/specific-products-and-risks/chemical-hazards/inorganic-arsenic/eng/1332268146718/1332268231124',
     'hydrogenated oil': 'https://www.medicalnewstoday.com/articles/hydrogentated-oil#:~:text=Side%20effects%20of%20hydrogenated%20oil&text=According%20to%20the%20FDA%20%2C%20trans,death%20in%20the%20United%20States.',
 

@@ -5,8 +5,10 @@
   --red: #d94848;
   --green: #5cb567;
   --white: #fcfcfc;
+  --grey: #667d8c;
   --lg-text: 30px;
-  --md-text: 25px;
+  --md-text: 27px;
+  --sm-text: 15px;
 }
 
 body {
@@ -27,8 +29,23 @@ header {
   margin-right: 1rem;
 }
 
+.header-link {
+  color: var(--black);
+  text-decoration: none;
+}
+
 /* scanner */
 
+.scanner-container {
+  width: 100%;
+  text-align: center;
+}
+
+video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* list */
 
@@ -41,6 +58,25 @@ header {
 }
 
 .ingredient {
-  margin-right: 1rem;
+  margin-right: 2rem;
   font-size: var(--md-text);
+}
+
+.reset-container {
+  height: 3rem;
+}
+
+.reset {
+  color: var(--grey);
+  display: block;
+  float: right;
+  cursor: pointer;
+}
+
+.reset > i {
+  margin-left: 1rem;
+}
+
+.link {
+  font-size: var(--sm-text);
 }

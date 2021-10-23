@@ -16,18 +16,19 @@ function Scanner({ showScanner, setShowScanner, setShowList }) {
     };
 
     return (
-        <div className='scanner'>
-        <>
-        <BarcodeScannerComponent
-            width={500}
-            height={500}
-            onUpdate={(err, result) => {
-            if (result) setCode(result.text);
-            else setCode("Not Found");
-            }}
-            className='scanner'
-        />
-        </>
+        <div className='scanner-container'>
+            <>
+            <BarcodeScannerComponent
+                width={500}
+                height={500}
+                onUpdate={(err, result) => {
+                if (result) setCode(result.text);
+                else setCode("Not Found");
+                }}
+                className='scanner'
+            />
+            </>
+            <p>scan a barcode to check for potentially harmful ingredients</p>
         </div>
     );
 };
