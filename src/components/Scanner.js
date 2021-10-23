@@ -1,9 +1,19 @@
 import React from "react";
+import { useDispatch, useSelector } from 'react-redux'
+
 import BarcodeScannerComponent from "react-qr-barcode-scanner";
 
-function Scanner() {
-    const [data, setData] = React.useState("Not Found");
-    var code = ''
+import { getProduct } from '../actions/productActions';
+
+function Scanner({ showScanner, setShowScanner, setShowList }) {
+    const [code, setCode] = React.useState("Not Found");
+
+    const dispatch = useDispatch()
+    
+    if (code !== 'Not Found') {
+        dispatch(getProduct(code, { setShowList }))
+        setShowScanner(false)
+    };
 
     return (
         <div className='scanner'>
@@ -12,12 +22,11 @@ function Scanner() {
             width={500}
             height={500}
             onUpdate={(err, result) => {
-            if (result) setData(result.text);
-            else setData("Not Found");
+            if (result) setCode(result.text);
+            else setCode("Not Found");
             }}
             className='scanner'
         />
-        <p>{data}</p>
         </>
         </div>
     );
