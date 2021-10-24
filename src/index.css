@@ -6,6 +6,7 @@
   --green: #5cb567;
   --white: #fcfcfc;
   --grey: #667d8c;
+  --blue: #5369c2;
   --lg-text: 30px;
   --md-text: 27px;
   --sm-text: 15px;
@@ -39,12 +40,17 @@ header {
 .scanner-container {
   width: 100%;
   text-align: center;
+  z-index: 3;
+  position: relative;
 }
 
 video {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 /* list */
@@ -79,4 +85,80 @@ video {
 
 .link {
   font-size: var(--sm-text);
+}
+
+.fa-undo {
+  transition: transform 300ms ease-in;
+}
+
+.fa-undo:hover {
+  transform: rotate(-25deg);
+}
+
+/* loader */
+
+.popup-container {
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-top: 30vh;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid var(--green);
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+/* learn more */
+
+.learn-more {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.learn-more-text {
+  font-size: var(--sm-text);
+  margin: 0 10rem;
+}
+
+.fa-angle-double-down {
+  margin-left: 0.5rem;
+  transition: transform 200ms ease-in;
+}
+
+.fa-angle-double-down:hover {
+  transform: translateY(1px);
 }
