@@ -18,7 +18,7 @@ export const getProduct = (code, { setShowList }) => async (dispatch, getState) 
             params: {upc: code},
             headers: {
               'x-rapidapi-host': 'edamam-food-and-grocery-database.p.rapidapi.com',
-              'x-rapidapi-key': 'f8618e6d16mshad8d1b96773f618p11ab2ajsn448a24405f51'
+              'x-rapidapi-key': '///'
             }
         };
 
